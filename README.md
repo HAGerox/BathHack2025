@@ -49,7 +49,7 @@ Built by Sumbhav, Finn and Alyson at Hackathon 2025
 
    bash
    
-   `git clone https://github.com/Sumbhav1/rf-audio-monitor.git
+   `git clone https://github.com/HAGerox/rf-audio-monitor.git
    cd rf-audio-monitor`
    
 Frontend Setup:
