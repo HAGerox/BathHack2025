@@ -168,17 +168,17 @@ def buffer_and_analyze_audio(source_id, ml_input_queue, ml_output_queue, warning
                 features = extract_features_from_chunk(normalized_chunk, RATE) # Use normalized_chunk
 
                 # --- TEMPORARY: Save features to file ---
-                if features is not None and features.shape[0] > 0:
-                    try:
-                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-                        # Sanitize source_id for filename (replace tuple chars)
-                        safe_source_id = str(source_id).replace(', ', '_').strip('()')
-                        filename = f"features_src{safe_source_id}_{timestamp}.npy"
-                        filepath = os.path.join(TEMP_FEATURE_DIR, filename)
-                        np.save(filepath, features)
-                        # print(f"ML Interface [{source_id}]: Saved features to {filepath}") # Optional: uncomment for verbose logging
-                    except Exception as e:
-                        print(f"ML Interface [{source_id}]: Error saving features: {e}")
+                # if features is not None and features.shape[0] > 0:
+                #     try:
+                #         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+                #         # Sanitize source_id for filename (replace tuple chars)
+                #         safe_source_id = str(source_id).replace(', ', '_').strip('()')
+                #         filename = f"features_src{safe_source_id}_{timestamp}.npy"
+                #         filepath = os.path.join(TEMP_FEATURE_DIR, filename)
+                #         np.save(filepath, features)
+                #         # print(f"ML Interface [{source_id}]: Saved features to {filepath}") # Optional: uncomment for verbose logging
+                #     except Exception as e:
+                #         print(f"ML Interface [{source_id}]: Error saving features: {e}")
                 # -----------------------------------------
 
                 if features is not None and features.shape[0] > 0:

@@ -8,8 +8,8 @@ from sklearn.metrics import classification_report
 MODEL_PATH = 'ML_MODEL/models/audio_popping_classifier_model_normalisedv7.joblib'
 
 # Load the processed data
-X = np.load('ML_MODEL/ProcessedData/training_data_features.npy')
-y = np.load('ML_MODEL/ProcessedData/training_data_labels.npy')
+X = np.load('ML_MODEL/Training_Data/ProcessedData/training_data_features.npy')
+y = np.load('ML_MODEL/Training_Data/ProcessedData/training_data_labels.npy')
 
 # Split the data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
