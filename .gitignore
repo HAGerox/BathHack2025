@@ -3,4 +3,4 @@ temp/
 __pycache__/
 NewSamples/
 AudioSamples/
-.DS_store/
+.DS_store
