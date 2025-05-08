@@ -1,5 +1,5 @@
 @ECHO OFF
 START python backend/server.py
 START python backend/main_backend.py
-CD frontend
+CD ../react_frontend/frontend
 START npm run dev
