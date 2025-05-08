@@ -1319,3 +1319,44 @@ dkms.conf
 *.uf2
 # Raspberry Pi Pico disassembler file
 *.dis
+
+# JUCE / C++ Backend specific
+cpp_backend/RF Audio Monitor/Builds/
+cpp_backend/RF Audio Monitor/JuceLibraryCode/
+
+# Visual Studio
+*.suo
+*.user
+*.vcxproj.filters
+*.vcxproj.user
+*.sln.docstates
+
+# CMake specific build files (if you use CMake directly outside Projucer's generated projects)
+CMakeBuilds/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cbp
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.dll
+*.dylib
+*.so
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
