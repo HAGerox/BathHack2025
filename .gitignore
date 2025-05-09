@@ -1360,3 +1360,5 @@ Makefile
 *.exe
 *.out
 *.app
+
+.vscode/
