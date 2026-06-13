@@ -1,0 +1,6 @@
+[core]
+    remote = truenas
+['remote "truenas"']
+    url = s3://dvc/bathhack2025
+    endpointurl = https://s3.finnstanley.com
+    region = garage
